@@ -2,13 +2,13 @@
   "name": "haxball-room-clones",
   "version": "1.0.0",
   "description": "This project lets you clone any HaxBall room and more.",
-  "homepage": "https://github.com/sefinek24/haxball-room-clones",
+  "homepage": "https://github.com/sefinek/haxball-room-clones",
   "bugs": {
-    "url": "https://github.com/sefinek24/haxball-room-clones/issues"
+    "url": "https://github.com/sefinek/haxball-room-clones/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sefinek24/haxball-room-clons.git"
+    "url": "git+https://github.com/sefinek/haxball-room-clons.git"
   },
   "license": "GPL-3.0",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
