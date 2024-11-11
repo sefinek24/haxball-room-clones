@@ -12,7 +12,7 @@ const links = [
 	'https://www.haxball.com/play?c=XXXXXXXXXXX',
 	'https://www.haxball.com/play?c=XXXXXXXXXXX',
 	'https://www.haxball.com/play?c=XXXXXXXXXXX',
-	'https://www.haxball.com/play?c=XXXXXXXXXXX'
+	'https://www.haxball.com/play?c=XXXXXXXXXXX',
 ];
 
 const repeatTimes = 6;
@@ -22,7 +22,7 @@ const delay = 9000;
 	const browser = await puppeteer.launch({
 		headless: false,
 		userDataDir: path.join(__dirname, 'chrome', 'profiles', 'spam'),
-		args: browserArgs
+		args: browserArgs,
 	});
 
 	for (let i = 0; i < repeatTimes; i++) {

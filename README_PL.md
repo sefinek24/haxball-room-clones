@@ -6,13 +6,13 @@ Ten projekt umożliwia sklonować dowolny pokój HaxBall i nie tylko. Upewnij si
 </div>
 <br>
 
-| Plik                 | Wideo | Beta? | Opis                                                                           |
-|----------------------|:------|-------|--------------------------------------------------------------------------------|
-| [index.js](index.js) | N/A   | ✅     | Pozwala na sklonowanie jakiegokolwiek pokoju.                                  |
-| [spam.js](spam.js)   | N/A   | ✅     | Odpala boty które wchodzą na konkretny room i spamią losowymi wiadomościami.   |
-| [raid.js](raid.js)   | N/A   | ❎     | Wpuszcza boty na rooma, które nic nie robią. Jedynie zapychają dostępne sloty. |
-| proxies.txt          | N/A   | ❎     | Lista serwerów proxy (najlepiej SOCKS5).                                       |
-| tokens.json          | N/A   | ❎     | Lista z tokenami headless oraz ich datą wygenerowania.                         |
+| Plik                 | Widea                                                                                                         | Beta? | Opis                                                                           |
+|----------------------|:--------------------------------------------------------------------------------------------------------------|-------|--------------------------------------------------------------------------------|
+| [index.js](index.js) | N/A                                                                                                           | ✅     | Pozwala na sklonowanie jakiegokolwiek pokoju.                                  |
+| [spam.js](spam.js)   | [1](videos/brave_CImkZcsVAvZS.mp4) [2](videos/brave_V9aVo2HB6Ls5.mp4) [3](videos/webstorm64_tRdRAAcKpprr.mp4) | ✅     | Odpala boty które wchodzą na konkretny room i spamią losowymi wiadomościami.   |
+| [raid.js](raid.js)   | N/A                                                                                                           | ❎     | Wpuszcza boty na rooma, które nic nie robią. Jedynie zapychają dostępne sloty. |
+| proxies.txt          | N/A                                                                                                           | ❎     | Lista serwerów proxy (najlepiej SOCKS5).                                       |
+| tokens.json          | N/A                                                                                                           | ❎     | Lista z tokenami headless oraz ich datą wygenerowania.                         |
 
 
 ## O Haxballu

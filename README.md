@@ -6,13 +6,13 @@ This project lets you clone any HaxBall room and more. Please ensure you have a 
 </div>
 <br>
 
-| File                 | Video | Beta? | Description                                                           |
-|----------------------|:------|-------|-----------------------------------------------------------------------|
-| [index.js](index.js) | N/A   | ✅     | Enables cloning of any room.                                          |
-| [spam.js](spam.js)   | N/A   | ✅     | Deploys bots to join a specific room and send random spam messages.   |
-| [raid.js](raid.js)   | N/A   | ❎     | Bots enter the room but do nothing other than occupy available slots. |
-| proxies.txt          | N/A   | ❎     | List of proxies (preferably SOCKS5).                                  |
-| tokens.json          | N/A   | ❎     | A list of headless tokens, along with their generation dates.         |
+| File                 | Videos                                                                                                        | Beta? | Description                                                           |
+|----------------------|:--------------------------------------------------------------------------------------------------------------|-------|-----------------------------------------------------------------------|
+| [index.js](index.js) | N/A                                                                                                           | ✅     | Enables cloning of any room.                                          |
+| [spam.js](spam.js)   | [1](videos/brave_CImkZcsVAvZS.mp4) [2](videos/brave_V9aVo2HB6Ls5.mp4) [3](videos/webstorm64_tRdRAAcKpprr.mp4) | ✅     | Deploys bots to join a specific room and send random spam messages.   |
+| [raid.js](raid.js)   | N/A                                                                                                           | ❎     | Bots enter the room but do nothing other than occupy available slots. |
+| proxies.txt          | N/A                                                                                                           | ❎     | List of proxies (preferably SOCKS5).                                  |
+| tokens.json          | N/A                                                                                                           | ❎     | A list of headless tokens, along with their generation dates.         |
 
 
 ## About
