@@ -23,11 +23,6 @@ Jeśli jesteś weteranem tej gry, pewnie będziesz negować moje słowa. Szczerz
 Basro jebie was na kasę z reklam Google Ads, a sam ma w dupę te gre.
 Zrób coś pożytecznego dla swojego kraju (albo i rodziny, której pewnie nie masz), a nie tylko siedzisz przed komputerem i grasz w piłkarzyki online.
 
-## Podatności i błędy Haxball
-Warto również tutaj wspomnieć o podatnościach tej gry, jak i o błędach.
-Jeśli serwer gry można scrashować, wysyłając do niej spreparowane pakiety UDP, które te potem powodują masę błędów, no to naprawdę nieźle.
-Naprawdę nie chce wiedzieć, jakie ta gra ma jeszcze podatności (a na pewno je ma).
-
 ## Jak to działa?
 1. Skrypt łączy się z losowym proxy (każde proxy reprezentuje jedną przeglądarkę z dwoma zakładkami).
 2. Wysyłany jest request GET do mojego API, umożliwiające wygenerowanie tokenu headless.

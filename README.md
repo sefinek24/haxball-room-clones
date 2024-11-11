@@ -23,11 +23,6 @@ If you are a veteran player of this game, you will probably deny my words. Hones
 Basro is ripping you off with Google Ads money, and he doesn't care about the game.
 Do something useful for your country (or your family, which you probably don't have), rather than just sitting in front of a computer playing online soccer.
 
-## HaxBall vulnerabilities and bugs
-It's also worth mentioning the vulnerabilities in this game, as well as the bugs.
-If the game server can be crashed by sending it crafted UDP packets that then cause a bunch of errors, that's really something.
-I really don't want to know what other vulnerabilities this game has (and it definitely has them).
-
 ## How does it work?
 1. The script connects to a random proxy, where each proxy represents a browser session with two tabs.
 2. A GET request is made to an API you must develop, which generates a headless token.
