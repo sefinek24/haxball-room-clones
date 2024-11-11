@@ -13,7 +13,7 @@ const LAUNCH_DELAY = 200;
 const USERNAMES_ARRAY = [
 	'Pscx1', 'wonderkid', '🐌 Pkt', 'Leeeeniiii', 'ErforTinho', 'six nine', 'zax', 'Zdun', 'Faluś', 'Dawidomad', 'przekozak',
 	'MrWorldwide', 'Jack Wilshere', 'Nektar Ananasowy', 'solek', 'hover cat', 'farmer', 'Yezzy>!', 'sucz44', 'FuzzaMuzza', 'FZK',
-	'Sbx', 'wonderkid', 'chinczyk', 'RadosnyStolec'
+	'Sbx', 'wonderkid', 'chinczyk', 'RadosnyStolec',
 ];
 const MESSAGES_ARRAY = [ '﷽﷽ ﷽﷽﷽ ﷽﷽﷽', 'JEBAĆ ZDUNA CWELA JEBANEGO'];
 
