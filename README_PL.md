@@ -76,5 +76,4 @@ curl "https://api.sefinek.net/api/v2/haxball/room-list"
 ```bash
 curl "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
 ```
-# GNU General Public License v3.0
-Copyright 2024 © by [Sefinek](https://sefine.net). Wszelkie prawa zastrzeżone.
+# MIT License
