@@ -35,18 +35,18 @@ Naprawdę nie chce wiedzieć, jakie ta gra ma jeszcze podatności (a na pewno je
 4. Co około ~12 minut skrypt sprawdza, czy dane geolokalizacyjne się zmieniły. Jeśli tak, strona sklonowanego pokoju jest odświeżana i uruchamiana ponownie z nowymi współrzędnymi (`kraj`, `lat`, `lon`).
 
 ## Czy można ten kod lepiej napisać? 🤓
-Jasne, że tak. Ale po co? Odpowiedz sam sobie na to pytanie.
+Oczywiście, że tak. Ale po co? Odpowiedz sam sobie na to pytanie.
 
 ## Jak użyć tego skryptu?
 ### Wymagania
-1. Będziesz potrzebować [proxy](https://stableproxy.com/?r=SKX2AY).
-2. Usługę, która oferuje [automatyczne rozwiązywanie captchy](https://getcaptchasolution.com/df5q6t8krs).
+1. Będziesz potrzebować [proxy](https://stableproxy.com/?r=SKX2AY)
+2. Usługę, która oferuje [automatyczne rozwiązywanie captchy](https://getcaptchasolution.com/df5q6t8krs)
 
     https://github.com/user-attachments/assets/48012a22-72c0-476b-ac5a-b11647973a20
 
 3. [Node.js + npm](https://nodejs.org) + [PM2](https://pm2.keymetrics.io).
-4. Linux (najlepiej wersja serwerowa, oczywiście bez GUI).
-5. Wymagane przynajmniej +4GB RAM.
+4. Linux
+5. Wymagane przynajmniej +8 GB RAM
 
 ### Użycie + instalacja
 ```sh
@@ -64,6 +64,7 @@ pm2 startup
 ```
 
 ### Testowane na
+- `Lubuntu` (Proxmox 8.2.7)
 - `Ubuntu Server 22.04` (Proxmox 8.2.7)
 
 ## Jak uzyskać współrzędne (lat, lon) każdego pokoju?

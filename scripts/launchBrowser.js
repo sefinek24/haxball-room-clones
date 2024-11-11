@@ -16,13 +16,13 @@ module.exports = async (proxy, userDataDir, browserArgs) => {
 		userDataDir,
 		ignoreDefaultArgs: [
 			'--disable-extensions',
-			'--enable-automation'
+			'--enable-automation',
 		],
 		args: [
 			anonymizedProxy ? `--proxy-server=${anonymizedProxy}` : '',
 			...browserArgs,
 			`--disable-extensions-except=${plugins}`,
-			`--load-extension=${plugins}`
-		].filter(Boolean)
+			`--load-extension=${plugins}`,
+		].filter(Boolean),
 	});
 };

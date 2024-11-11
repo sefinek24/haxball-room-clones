@@ -169,5 +169,5 @@ module.exports = {
 	waitForSelector,
 	openTargetRoom,
 	handleRoom,
-	setupRoom
+	setupRoom,
 };

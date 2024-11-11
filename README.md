@@ -35,18 +35,18 @@ I really don't want to know what other vulnerabilities this game has (and it def
 4. Every ~12 minutes, the script checks for updates in geolocation data. If changes are detected, the cloned room’s page is refreshed and restarted using the new coordinates (`country`, `lat`, `lon`).
 
 ## Can this code be written better? 🤓
-Definitely, but for what? Answer that question yourself.
+Of course, but for what? Answer that question yourself.
 
 ## How to use this script?
 ### Requirements
-1. You will need [a proxy](https://stableproxy.com/?r=SKX2AY).
-2. A service that offers [automatic captcha solving](https://getcaptchasolution.com/df5q6t8krs).
+1. You will need [a proxy](https://stableproxy.com/?r=SKX2AY)
+2. A service that offers [automatic captcha solving](https://getcaptchasolution.com/df5q6t8krs)
 
     https://github.com/user-attachments/assets/48012a22-72c0-476b-ac5a-b11647973a20
 
-3. [Node.js + npm](https://nodejs.org) + [PM2](https://pm2.keymetrics.io).
-4. Linux (preferably a server version, obviously without a GUI).
-5. At least +4GB of RAM is required.
+3. [Node.js + npm](https://nodejs.org) + [PM2](https://pm2.keymetrics.io)
+4. Linux
+5. At least +8 GB of RAM is required
 
 ### Usage & Installation
 ```sh
@@ -64,6 +64,7 @@ pm2 startup
 ```
 
 ### Tested on
+- `Lubuntu` (Proxmox 8.2.7)
 - `Ubuntu Server 22.04` (Proxmox 8.2.7)
 
 ## How to get coordinates (lat, lon) for each room?

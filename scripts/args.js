@@ -20,5 +20,5 @@ module.exports = [
 	'--disable-sync',
 	'--metrics-recording-only',
 	'--disable-desktop-notifications',
-	'--no-zygote'
+	'--no-zygote',
 ];

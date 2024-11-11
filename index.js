@@ -7,8 +7,8 @@ const getRandomGeoLocation = require('./scripts/getRandomGeoLocation.js');
 const browserArgs = require('./scripts/args.js');
 const loadProxies = require('./scripts/loadProxies.js');
 const injectScript = require('./scripts/injectScript.js');
-const getRoomData = require('./scripts/services/getRoomData.js');
-const getToken = require('./scripts/services/getToken.js');
+const getRoomData = require('./services/getRoomData.js');
+const getToken = require('./services/getToken.js');
 const launchBrowser = require('./scripts/launchBrowser.js');
 const { createProfileDir, getRandomNickname, setupRoom, openTargetRoom, waitForSelector } = require('./scripts/utils.js');
 const { USERNAMES, MESSAGES } = require('./scripts/arrays.js');
@@ -16,7 +16,7 @@ const sleep = require('./scripts/sleep.js');
 
 puppeteer.use(StealthPlugin());
 
-const TARGET_ROOM_END = process.env.TARGET_ROOM_END;
+const { TARGET_ROOM_END } = process.env;
 let proxyIndex = 0;
 
 const getRandomElement = array => array[Math.floor(Math.random() * array.length)];

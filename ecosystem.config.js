@@ -3,14 +3,6 @@ module.exports = {
 		name: 'rooms',
 		script: './index.js',
 
-		// Configuration options
-		exec_mode: 'fork',
-		max_memory_restart: null,
-
-		// Monitoring changes in files and restarting the application
-		watch: false,
-		ignore_watch: ['.git', 'node_modules', 'logs', '.eslintrc.js', 'ecosystem.config.js'],
-
 		// Logging settings
 		log_date_format: 'HH:mm:ss.SSS DD.MM.YYYY',
 		merge_logs: true,

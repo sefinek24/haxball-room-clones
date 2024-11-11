@@ -1,7 +1,7 @@
 const USERNAMES = [
 	'Pscx1', 'wonderkid', '🐌 Pkt', 'Leeeeniiii', 'ErforTinho', 'six nine', 'zax', 'Zdun', 'Rumpolog', 'Faluś', 'Dawidomad', 'przekozak',
 	'MrWorldwide', 'Jack Wilshere', 'Nektar Ananasowy', 'solek', 'hover cat', 'farmer', 'Yezzy>!', 'sucz44', 'FuzzaMuzza', 'FZK',
-	'Sbx', 'wonderkid', 'chinczyk', 'RadosnyStolec', 'Mike Dwubiegunowy'
+	'Sbx', 'wonderkid', 'chinczyk', 'RadosnyStolec', 'Mike Dwubiegunowy',
 ];
 
 const MESSAGES_ENCRYPTED = [
@@ -20,7 +20,7 @@ const MESSAGES_ENCRYPTED = [
 	'bHViaWVtIHcgcGFwdWxjYSBoaWhpIDoz',
 	'a29jaGFtIG1vcmlzYSA6MyBpIG9uIGtvY2hhIG1uaWUgOjMz',
 	'c2xhdmEgcHV0aW4=',
-	'YnJ1aGggYWxlIGphIGt1cndhIHJseSB1a3JhaW5jb3cgbmllbmF3aWR6ZQ=='
+	'YnJ1aGggYWxlIGphIGt1cndhIHJseSB1a3JhaW5jb3cgbmllbmF3aWR6ZQ==',
 ];
 
 const decodeBase64Messages = str => str.map(msg => Buffer.from(msg, 'base64').toString('utf-8'));

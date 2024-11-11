@@ -15,7 +15,7 @@ const createRoom = async () => {
 		playerName: 'KPYRHAX.PRO',
 		token: '{TOKEN}',
 		noPlayer: true,
-		geo: { code: currentGeo.country, lat: currentGeo.lat, lon: currentGeo.lon }
+		geo: { code: currentGeo.country, lat: currentGeo.lat, lon: currentGeo.lon },
 	});
 
 	room.setScoreLimit(1);
@@ -72,8 +72,8 @@ const createRoom = async () => {
 		'Cześć jestem zdun. Bardzo lubię w dupię oraz uwielbiam seks z moim partnerem. Ogólnie to jestem hardkorem w łóżku.',
 		'Czy wiesz, że Sefinek zarobił ponad 3 tysiące dzięki zdunowskim `raidom` za sprawą morissa?',
 		'SZUKASZ TANIEGO I WYDAJNEGO PROXY? SPRAWDŹ https://stableproxy.com/?r=B4T4VR !!!\nIDEALNIE NADA SIĘ DO CIŚNIĘCIA BEKI Z TEGO JAKIM GÓWNEM HAXBALL',
-		'CHCESZ UZYSKAĆ GEO KAŻDEGO ROOMA? SPRAWDŹ: https://api.sefinek.net/api/v2/haxball/room-list',
-		'Czy wiesz, że moriss kupił sefinowi szafę rack dla jego serwerów?'
+		'CHCESZ UZYSKAĆ GEO JAKIEGOKOLWIEK ROOMA? SPRAWDŹ: https://api.sefinek.net/api/v2/haxball/room-list',
+		'Czy wiesz, że moriss kupił sefinowi szafę rack dla jego serwerów?',
 	];
 
 	let messageInterval;

@@ -22,7 +22,7 @@ const injectScript = async page => {
 		headless: false,
 		devtools: NODE_ENV === 'development',
 		userDataDir: path.resolve(__dirname, '..', '..', 'chrome', 'profiles', 'test'),
-		args: browserArgs
+		args: browserArgs,
 	});
 
 	const pages = await browser.pages();

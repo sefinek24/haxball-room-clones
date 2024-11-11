@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const axios = require('../scripts/services/axios.js');
+const axios = require('../services/axios.js');
 const fs = require('node:fs');
 const AdmZip = require('adm-zip');
 

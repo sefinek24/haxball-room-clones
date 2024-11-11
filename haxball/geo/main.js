@@ -13,17 +13,17 @@ const table = new Tabulator('#room-list', {
 				const data1 = aRow.getData();
 				const data2 = bRow.getData();
 				return data1.players - data2.players;
-			}
+			},
 		},
 		{ title: 'Pass', field: 'pass', hozAlign: 'center', formatter: printPassword },
 		{ title: 'Flag', field: 'flag', hozAlign: 'center', formatter: printFlag },
 		{ title: 'Latitude', field: 'lat', hozAlign: 'center' },
-		{ title: 'Longitude', field: 'long', hozAlign: 'center' }
+		{ title: 'Longitude', field: 'long', hozAlign: 'center' },
 	],
 	rowFormatter: row => {
 		const data = row.getData();
 		if (data.players == data.maxPlayers) row.getElement().style.color = 'red';
-	}
+	},
 });
 
 table.on('rowDblClick', (e, row) => {
@@ -95,7 +95,7 @@ class Reader {
 		else {throw new Error('Cannot decode UTF8 character at offset ' + b + ': charCode (' + c + ') is invalid');}
 		return {
 			'char': c,
-			length: b - l
+			length: b - l,
 		};
 	}
 
@@ -186,7 +186,7 @@ function parseRooms(a) {
 			long: a.getLongitude(),
 			password: a.isPassword(),
 			maxPlayers: a.getPlayersLimit(),
-			players: a.getPlayers()
+			players: a.getPlayers(),
 		};
 		totalPlayers += room.players;
 		rooms.push(room);
