@@ -1,7 +1,9 @@
 const axios = require('./axios.js');
 
+const name = process.env.ROOM_NAME_TO_CLONE;
+
 module.exports = async () => {
-	if (!process.env.ROOM_NAME_TO_CLONE) throw new Error('ROOM_NAME_TO_CLONE is null or undefined');
+	if (!name) throw new Error('ROOM_NAME_TO_CLONE is null or undefined');
 
 	try {
 		const res = await axios.get(`https://api.sefinek.net/api/v2/haxball/room-list?name=${name}`);
