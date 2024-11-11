@@ -18,7 +18,7 @@ Ten projekt umożliwia sklonować dowolny pokój HaxBall i nie tylko. Upewnij si
 ## O Haxballu
 Gra dla ułomnych 30 latków (większość osób w tej grze ma aspergera), którzy nie mają życia.
 Biedni ludzie skrzywdzeni przez los, z marną egzystencją.
-Jeśli jesteś weteranem tej gry, pewnie będziesz negować moje słowa. Szczerze? Nie interesuje mnie to.
+Jeśli jesteś weteranem tej gry, pewnie będziesz negować moje słowa. Szczerze? Nie obchodzi mnie to.
 
 Basro jebie was na kasę z reklam Google Ads, a sam ma w dupę te gre.
 Zrób coś pożytecznego dla swojego kraju (albo i rodziny, której pewnie nie masz), a nie tylko siedzisz przed komputerem i grasz w piłkarzyki online.
