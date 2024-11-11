@@ -69,12 +69,12 @@ Use the `name` parameter to get information about a specific room. It's not nece
 ### Examples
 #### All rooms
 ```bash
-curl -X GET "https://api.sefinek.net/api/v2/haxball/room-list"
+curl "https://api.sefinek.net/api/v2/haxball/room-list"
 ```
 
 #### Specific room
 ```bash
-curl -X GET "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
+curl "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
 ```
 
 # GNU General Public License v3.0

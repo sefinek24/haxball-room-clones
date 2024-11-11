@@ -69,12 +69,12 @@ Użyj parametru `name`, aby uzyskać informacje o konkretnym pokoju. Podanie pe�
 ### Przykłady
 #### Wszystkie pokoje
 ```bash
-curl -X GET "https://api.sefinek.net/api/v2/haxball/room-list"
+curl "https://api.sefinek.net/api/v2/haxball/room-list"
 ```
 
 #### Konkretny pokój
 ```bash
-curl -X GET "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
+curl "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
 ```
 # GNU General Public License v3.0
 Copyright 2024 © by [Sefinek](https://sefine.net). Wszelkie prawa zastrzeżone.
