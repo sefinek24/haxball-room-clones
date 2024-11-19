@@ -25,12 +25,12 @@ Zrób coś pożytecznego dla swojego kraju (albo i rodziny, której pewnie nie m
 
 ## Jak to działa?
 1. Skrypt łączy się z losowym proxy (każde proxy reprezentuje jedną przeglądarkę z dwoma zakładkami).
-2. Wysyłany jest request GET do mojego API, umożliwiające wygenerowanie tokenu headless.
+2. Wysyłany jest request GET do mojego API, w celu wygenerowania tokenu headless.
 3. Tokeny są przechowywane w pliku `tokens.json`. Jeśli jakiś token jest przeterminowany, kod automatycznie wygeneruje nowy.
 4. Co około ~12 minut skrypt sprawdza, czy dane geolokalizacyjne się zmieniły. Jeśli tak, strona sklonowanego pokoju jest odświeżana i uruchamiana ponownie z nowymi współrzędnymi (`kraj`, `lat`, `lon`).
 
 ## Czy można ten kod lepiej napisać? 🤓
-Oczywiście, że tak. Ale po co? Odpowiedz sam sobie na to pytanie.
+Oczywiście, ale po co? Odpowiedz sam sobie na to pytanie.
 
 ## Jak użyć tego skryptu?
 ### Wymagania
@@ -47,6 +47,8 @@ Oczywiście, że tak. Ale po co? Odpowiedz sam sobie na to pytanie.
 ```sh
 sudo apt update && sudo apt upgrade -y
 sudo reboot (jeśli kernel został zaktualizowany)
+cd ~
+git clone https://github.com/sefinek/haxball-room-clones.git
 npm install
 mcedit proxy.txt (wklej wszystkie swoje proxy)
 cp .env.default .env

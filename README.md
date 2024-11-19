@@ -25,7 +25,7 @@ Do something useful for your country (or your family, which you probably don't h
 
 ## How does it work?
 1. The script connects to a random proxy, where each proxy represents a browser session with two tabs.
-2. A GET request is made to an API you must develop, which generates a headless token.
+2. A GET request is being sent to my API to generate a headless token.
 3. Tokens are saved in the `tokens.json` file. If a token expires, the script automatically generates a new one.
 4. Every ~12 minutes, the script checks for updates in geolocation data. If changes are detected, the cloned room’s page is refreshed and restarted using the new coordinates (`country`, `lat`, `lon`).
 
@@ -47,6 +47,8 @@ Of course, but for what? Answer that question yourself.
 ```sh
 sudo apt update && sudo apt upgrade -y
 sudo reboot (if the kernel has been updated)
+cd ~
+git clone https://github.com/sefinek/haxball-room-clones.git
 npm install
 mcedit proxy.txt (paste all your proxies)
 cp .env.default .env
