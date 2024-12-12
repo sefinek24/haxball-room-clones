@@ -25,7 +25,7 @@ const getNewToken = async () => {
 				return { token: data.token, generatedAt: Date.now() };
 			}
 		} catch (err) {
-			console.error(`Error on attempt ${attempt}:`, err.stack);
+			console.error(`Error on attempt ${attempt}:`, err.message);
 		}
 	}
 
