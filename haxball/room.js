@@ -34,7 +34,7 @@ const createRoom = async () => {
 		div.id = 'room-info';
 		div.innerHTML = `
     <div style="font-family:Arial,sans-serif;color:#fff;text-shadow:0 0 5px #000;background-color:#333;padding:20px;border-radius:5px;box-shadow:0 0 4px rgb(0, 0, 0, .6)">
-        <h1>Room Information</h1>
+        <h1>Summary</h1>
         <p>Room Name: <strong>${roomName}</strong></p>
         <p>Room Name to Clone: <strong>${roomNameToClone}</strong></p>
         <p>Environment: <strong>${env}</strong></p>
