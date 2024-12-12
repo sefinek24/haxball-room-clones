@@ -1,6 +1,6 @@
 {
   "name": "haxball-room-clones",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This project lets you clone any HaxBall room and more.",
   "homepage": "https://github.com/sefinek/haxball-room-clones",
   "bugs": {
@@ -21,18 +21,18 @@
     "date": "node scripts/timestamp.js"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "dotenv": "^16.4.5",
-    "proxy-chain": "^2.5.4",
-    "puppeteer": "^23.7.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "proxy-chain": "^2.5.6",
+    "puppeteer": "^23.10.3",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-anonymize-ua": "^2.4.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.16.0",
     "adm-zip": "^0.5.16",
-    "globals": "^15.12.0"
+    "globals": "^15.13.0"
   }
 }
