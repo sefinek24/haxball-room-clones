@@ -4,7 +4,9 @@ const axios = require('./axios.js');
 
 const TOKEN_LIFETIME = 2 * 60 * 60 * 1000; // 2 hours
 const MAX_RETRIES = 4;
-const TOKENS_JSON = path.join(__dirname, '..', '..', 'tokens.json');
+const TOKENS_JSON = path.join(__dirname, '..', 'tokens.json');
+console.log(`Tokens: ${TOKENS_JSON}`);
+
 const apiKey = process.env.SEFIN_API_SECRET;
 
 const saveTokens = tokens => fs.writeFileSync(TOKENS_JSON, JSON.stringify(tokens, null, 2));
