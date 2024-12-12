@@ -8,7 +8,6 @@ const { getRandomNickname, createProfileDir, openTargetRoom, setupRoom } = requi
 
 // Config
 const TARGET_ROOM = process.env.TARGET_ROOM;
-const MAX_BROWSERS = 16;
 const LAUNCH_DELAY = 200;
 const USERNAMES_ARRAY = [
 	'Pscx1', 'wonderkid', '🐌 Pkt', 'Leeeeniiii', 'ErforTinho', 'six nine', 'zax', 'Zdun', 'Faluś', 'Dawidomad', 'przekozak',
@@ -23,9 +22,11 @@ const MESSAGES_ARRAY = [ '﷽﷽ ﷽﷽﷽ ﷽﷽﷽', 'JEBAĆ ZDUNA CWELA JEBAN
 
 	const proxies = fs.readFileSync(path.join(__dirname, 'proxies.txt'), 'utf-8').split('\n').filter(Boolean);
 	let browserLaunchCount = 0;
+	const botsCount = parseInt(process.env.MAX_BOTS, 10);
+	console.log(`Bots count: ${botsCount} (env MAX_BOTS)`);
 
 	for (const proxy of proxies) {
-		if (browserLaunchCount >= MAX_BROWSERS) break;
+		if (browserLaunchCount >= botsCount) break;
 
 		const profile = createProfileDir();
 		if (fs.existsSync(profile.path)) fs.rmSync(profile.path, { recursive: true, force: true });
@@ -42,6 +43,6 @@ const MESSAGES_ARRAY = [ '﷽﷽ ﷽﷽﷽ ﷽﷽﷽', 'JEBAĆ ZDUNA CWELA JEBAN
 		await openTargetRoom(page, TARGET_ROOM);
 		await setupRoom(page, randomNick, MESSAGES_ARRAY);
 
-		if (MAX_BROWSERS > 1) await new Promise(resolve => setTimeout(resolve, LAUNCH_DELAY));
+		if (botsCount > 1) await new Promise(resolve => setTimeout(resolve, LAUNCH_DELAY));
 	}
 })();

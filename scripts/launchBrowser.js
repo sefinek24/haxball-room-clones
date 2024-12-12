@@ -9,7 +9,7 @@ const chromePath = path.join(__dirname, '..', 'chrome', `${process.env.NODE_ENV 
 console.log('Chrome:', chromePath);
 
 module.exports = async (proxy, userDataDir, browserArgs) => {
-	const anonymizedProxy = proxy ? await ProxyChain.anonymizeProxy(proxy) : null;
+	const anonymizedProxy = proxy && process.env.USE_PROXY === 'true' ? await ProxyChain.anonymizeProxy(proxy) : null;
 	return await puppeteer.launch({
 		headless: process.env.BOTS === 'false',
 		executablePath: chromePath,
