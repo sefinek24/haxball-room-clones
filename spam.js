@@ -7,14 +7,32 @@ const launchBrowser = require('./scripts/launchBrowser.js');
 const { getRandomNickname, createProfileDir, openTargetRoom, setupRoom } = require('./scripts/utils.js');
 
 // Config
-const TARGET_ROOM = process.env.TARGET_ROOM;
 const LAUNCH_DELAY = 200;
 const USERNAMES_ARRAY = [
-	'Pscx1', 'wonderkid', '🐌 Pkt', 'Leeeeniiii', 'ErforTinho', 'six nine', 'zax', 'Zdun', 'Faluś', 'Dawidomad', 'przekozak',
-	'MrWorldwide', 'Jack Wilshere', 'Nektar Ananasowy', 'solek', 'hover cat', 'farmer', 'Yezzy>!', 'sucz44', 'FuzzaMuzza', 'FZK',
-	'Sbx', 'wonderkid', 'chinczyk', 'RadosnyStolec',
+	'Pscx1', 'wonderkid', '🐌 Pkt', 'Leeeeniiii', 'RadosnyStolec', 'six nine', 'zax', 'chinczyk', 'Faluś', 'Dawidomad', 'przekozak', 'MrWorldwide',
+	'Jack Wilshere', 'Nektar Ananasowy', 'solek', 'hover cat', 'farmer', 'Yezzy>!', 'sucz44', 'FuzzaMuzza', 'FZK', 'Sbx', 'wonderkid',
 ];
-const MESSAGES_ARRAY = [ '﷽﷽ ﷽﷽﷽ ﷽﷽﷽', 'JEBAĆ ZDUNA CWELA JEBANEGO'];
+
+const MESSAGES_ARRAY = [
+	'﷽﷽ ﷽﷽﷽ ﷽﷽﷽',
+	'ह संदेश समझने की कोशिश कर रहे हैं? 😵‍💫🤯 🧿',
+	'﷽ ﷻﷻﷻ ﷽﷽﷽ ﷽﷽',
+	' ﷽ ﷽﷽ ﷽﷽ ﷽﷽﷽﷽',
+	'﷽﷽ ﷽ ﷽ ﷽﷽﷽',
+	'﷽﷽ ﷽﷽﷽ ﷽﷽﷽ ﷻﷻﷻ ﷽﷽﷽ ﷽﷽﷽',
+	'☠️✨☯️🌌✴️🌠 💀',
+	'𓂀 𓆣 𓉝 𓂉 𓃹 𓏢 𓋹',
+	'مرحبا بكم في أرض العجائب! 💫🎭',
+	'𐂃 𐎘 𐌄 𐌈 𐌋 𐍉 𐍀',
+	'ﺍﺍﺍ ﷽﷽ ﷽ ﷽ ﷽﷽﷽ ﷽ ﷽',
+	'💥⚡𓁿𓀭𓂧𓇼𓎆',
+	'🌀✨🎴🏺📿💡',
+	'𓋼𓋼𓋼𓋼𓋼',
+	'☾★☀☁☂☃☄',
+	'🌌🧿🌀☪️📿✨☠️🏺𓂀',
+	'🇰🇿Казахстан угрожает⚠️нам бир угроает⚠️нам бомбардировкой💣🇰🇿Казахстан угрожает⚠️нам бир угроает⚠️нам бомбардировкой💣🇰🇿Казахстан угрожает',
+];
+
 
 (async () => {
 	const plugins = path.join(__dirname, 'chrome', 'plugins');
@@ -40,7 +58,7 @@ const MESSAGES_ARRAY = [ '﷽﷽ ﷽﷽﷽ ﷽﷽﷽', 'JEBAĆ ZDUNA CWELA JEBAN
 		const pages = await browser.pages();
 		const page = pages.length > 0 ? pages[0] : await browser.newPage();
 
-		await openTargetRoom(page, TARGET_ROOM);
+		await openTargetRoom(page, process.env.TARGET_ROOM);
 		await setupRoom(page, randomNick, MESSAGES_ARRAY);
 
 		if (botsCount > 1) await new Promise(resolve => setTimeout(resolve, LAUNCH_DELAY));
