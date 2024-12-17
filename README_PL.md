@@ -78,4 +78,7 @@ curl "https://api.sefinek.net/api/v2/haxball/room-list"
 ```bash
 curl "https://api.sefinek.net/api/v2/haxball/room-list?name=haxnball"
 ```
-# MIT License
+
+
+## Inne repa
+https://github.com/sefinek/2-haxball-rooms
