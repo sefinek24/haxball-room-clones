@@ -52,8 +52,8 @@ git clone https://github.com/sefinek/haxball-raid-clones.git
 npm install
 mcedit proxy.txt (paste all your proxies)
 cp .env.default .env
-mcedit .env (set NODE_ENV to production and adjust other values)
-Install the required dependencies for Chrome: https://github.com/sefinek/sefinek/blob/main/chrome.md://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
+mcedit .env (set NODE_ENV to production and adjust other variables)
+Install the required dependencies for Chrome: https://github.com/sefinek/sefinek/blob/main/chrome.md
 npm install pm2 -g
 pm2 start
 pm2 save
