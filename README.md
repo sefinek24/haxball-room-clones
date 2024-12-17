@@ -53,7 +53,7 @@ npm install
 mcedit proxy.txt (paste all your proxies)
 cp .env.default .env
 mcedit .env (set NODE_ENV to production and adjust other values)
-sudo apt install libasound2 libatk-bridge2.0-0 libatk1.0-0 libatspi2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libdrm2 libexpat1 libgbm1 libglib2.0-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libudev1 libuuid1 libx11-6 libx11-xcb1 libxcb-dri3-0 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxkbcommon0 libxrandr2 libxrender1 libxshmfence1 libxss1 libxtst6 (for Ubuntu Server 22.04, see: https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
+Install the required dependencies for Chrome: https://github.com/sefinek/sefinek/blob/main/chrome.md://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
 npm install pm2 -g
 pm2 start
 pm2 save

@@ -21,7 +21,7 @@ Biedni ludzie skrzywdzeni przez los, z marną egzystencją.
 Jeśli jesteś weteranem tej gry, pewnie będziesz negować moje słowa. Szczerze? Nie obchodzi mnie to.
 
 Basro jebie was na kasę z reklam Google Ads, a sam ma w dupę te gre.
-Zrób coś pożytecznego dla swojego kraju (albo i rodziny, której pewnie nie masz), a nie tylko siedzisz przed komputerem i grasz w piłkarzyki online.
+Zrób coś pożytecznego dla swojego kraju (albo i rodziny, której pewnie nie masz), a nie tylko siedzisz przed komputerkiem i grasz w piłkarzyki online.
 
 ## Jak to działa?
 1. Skrypt łączy się z losowym proxy (każde proxy reprezentuje jedną przeglądarkę z dwoma zakładkami).
@@ -53,7 +53,7 @@ npm install
 mcedit proxy.txt (wklej wszystkie swoje proxy)
 cp .env.default .env
 mcedit .env (ustaw NODE_ENV na production i dostosuj pozostałe wartości)
-sudo apt install libasound2 libatk-bridge2.0-0 libatk1.0-0 libatspi2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libdrm2 libexpat1 libgbm1 libglib2.0-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libudev1 libuuid1 libx11-6 libx11-xcb1 libxcb-dri3-0 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxkbcommon0 libxrandr2 libxrender1 libxshmfence1 libxss1 libxtst6 (for Ubuntu Server 22.04, see: https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
+Zainstaluj wymagane zależności dla Chrome: https://github.com/sefinek/sefinek/blob/main/chrome.md
 npm install pm2 -g
 pm2 start
 pm2 save
