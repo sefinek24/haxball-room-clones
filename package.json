@@ -1,14 +1,14 @@
 {
-  "name": "haxball-room-clones",
+  "name": "haxball-raid-clones",
   "version": "1.0.1",
   "description": "This project lets you clone any HaxBall room and more.",
-  "homepage": "https://github.com/sefinek/haxball-room-clones",
+  "homepage": "https://github.com/sefinek/haxball-raid-clones",
   "bugs": {
-    "url": "https://github.com/sefinek/haxball-room-clones/issues"
+    "url": "https://github.com/sefinek/haxball-raid-clones/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sefinek/haxball-room-clons.git"
+    "url": "git+https://github.com/sefinek/haxball-raid-clones.git"
   },
   "license": "MIT",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",

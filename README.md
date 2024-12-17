@@ -48,7 +48,7 @@ Of course, but for what? Answer that question yourself.
 sudo apt update && sudo apt upgrade -y
 sudo reboot (if the kernel has been updated)
 cd ~
-git clone https://github.com/sefinek/haxball-room-clones.git
+git clone https://github.com/sefinek/haxball-raid-clones.git
 npm install
 mcedit proxy.txt (paste all your proxies)
 cp .env.default .env
