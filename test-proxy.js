@@ -8,7 +8,7 @@ const { createProfileDir, openTargetRoom } = require('./scripts/utils.js');
 
 // Config
 const LAUNCH_DELAY = 3000;
-const MAX_TABS = 1;
+const MAX_TABS = 4;
 
 (async () => {
 	const proxies = fs.readFileSync(path.join(__dirname, 'proxies.txt'), 'utf-8').split('\n').filter(Boolean);
@@ -26,8 +26,9 @@ const MAX_TABS = 1;
 		const pages = await browser.pages();
 		const page = pages.length > 0 ? pages[0] : await browser.newPage();
 
-		// await openTargetRoom(page, 'https://myip.com');
-		await openTargetRoom(page, 'https://haxball.com');
+		await openTargetRoom(page, 'https://myip.com');
+		// await openTargetRoom(page, 'https://haxball.com');
+		// await openTargetRoom(page, 'https://sefinek.net');
 
 		if (MAX_TABS > 1) await new Promise(resolve => setTimeout(resolve, LAUNCH_DELAY));
 	}
