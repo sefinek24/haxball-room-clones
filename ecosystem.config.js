@@ -1,6 +1,6 @@
 module.exports = {
 	apps: [{
-		name: 'rooms',
+		name: 'hclones',
 		script: './index.js',
 
 		// Logging settings
