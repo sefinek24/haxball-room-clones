@@ -1,6 +1,9 @@
 const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const ProxyChain = require('proxy-chain');
 const path = require('node:path');
+
+puppeteer.use(StealthPlugin());
 
 const plugins = path.join(__dirname, '..', 'chrome', 'plugins');
 console.log('Plugins', plugins);
