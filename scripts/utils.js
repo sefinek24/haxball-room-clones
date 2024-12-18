@@ -3,8 +3,8 @@ const fs = require('node:fs');
 const crypto = require('node:crypto');
 const sleep = require('./sleep.js');
 
-const blockedResources = new Set(['image', 'icon', 'imageset', 'font', 'media', 'blob', 'websocket', 'application']);
-const blockedDomains = 'server.cpmstar.com';
+const blockedResources = new Set(['image', 'icon', 'imageset', 'font', 'media', 'blob', 'websocket', 'application', 'texttrack', 'manifest', 'fetch', 'other', 'font']);
+const blockedDomains = new Set(['server.cpmstar.com', 'pagead2.googlesyndication.com', 'gstatic.com', 'www.gstatic.com', 'doubleclick.net', 'www.youtube.com', 'facebook.com', 'connect.facebook.net', 'twitter.com', 'platform.twitter.com', 'instagram.com', 'cdn.jsdelivr.net', 'adservice.google.com', 'ads.yahoo.com', 'ads.twitter.com', 'ytimg.com', 'google-analytics.com', 'googletagmanager.com', 'googletagservices.com', 'fonts.googleapis.com']);
 
 const createProfileDir = () => {
 	const profilePath = path.join(__dirname, '..', 'chrome', 'profiles', 'raid', Date.now().toString());
@@ -66,13 +66,15 @@ const simulateMovement = async (gameView, page) => {
 const openTargetRoom = async (page, targetRoom) => {
 	try {
 		await page.setRequestInterception(true);
-		page.on('request', (req) => {
-			if (blockedResources.has(req.resourceType()) || req.url().includes(blockedDomains)) {
-				req.abort();
-				// console.debug(`Blocked: ${req.url()}`);
-			} else {
-				req.continue();
+
+		page.on('request', req => {
+			if (blockedResources.has(req.resourceType()) || blockedDomains.has(new URL(req.url()).hostname)) {
+				console.debug(`BL ${req.resourceType()}: ${req.url()}`);
+				return req.abort();
 			}
+
+			console.debug(`DN ${req.resourceType()}: ${req.url()}`);
+			req.continue();
 		});
 
 		await page.goto(targetRoom, { waitUntil: 'networkidle0' });
