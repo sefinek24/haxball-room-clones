@@ -23,10 +23,13 @@ const extractPath = './chrome/plugins';
 	new AdmZip(zipPath).extractAllTo(extractPath, true);
 	fs.unlinkSync(zipPath);
 
-	if (fs.existsSync(`${extractPath}/js/config_ac_api_key.js`)) {
-		let confData = fs.readFileSync(`${extractPath}/js/config_ac_api_key.js`, 'utf8');
+	const jsFile = `${extractPath}/js/config_ac_api_key.js`;
+	if (fs.existsSync(jsFile)) {
+		let confData = fs.readFileSync(jsFile, 'utf8');
 		confData = confData.replace(/antiCapthaPredefinedApiKey = ''/g, `antiCapthaPredefinedApiKey = '${process.env.ANTI_CAPTCHA_SECRET}'`);
-		fs.writeFileSync(`${extractPath}/js/config_ac_api_key.js`, confData, 'utf8');
+		fs.writeFileSync(jsFile, confData, 'utf8');
+
+		console.log(`Successfully! Downloaded anticaptcha-plugin.zip and modified ${jsFile}`);
 	} else {
 		console.error('Plugin configuration not found!');
 	}
