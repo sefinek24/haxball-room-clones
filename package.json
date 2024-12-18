@@ -2,7 +2,10 @@
   "name": "haxball-raid-clones",
   "version": "1.0.2",
   "description": "This project lets you clone any HaxBall room and more.",
-  "homepage": "https://github.com/sefinek/haxball-raid-clones",
+  "keywords": [
+    "haxball"
+  ],
+  "homepage": "https://github.com/sefinek/haxball-raid-clones#readme",
   "bugs": {
     "url": "https://github.com/sefinek/haxball-raid-clones/issues"
   },
@@ -17,6 +20,7 @@
     "date": "node scripts/timestamp.js",
     "dchrome": "npx @puppeteer/browsers install chrome@126",
     "kchrome": "taskkill /F /IM chrome.exe /T",
+    "prepare-anticaptcha": "node tools/Prepare-AntiCaptcha.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "up": "ncu -u && npm install && npm update && npm audit fix"
   },
