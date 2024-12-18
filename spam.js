@@ -35,11 +35,9 @@ const MESSAGES_ARRAY = [
 
 
 (async () => {
-	const plugins = path.join(__dirname, 'chrome', 'plugins');
-	console.log(`Plugins: ${plugins}`);
-
 	const proxies = fs.readFileSync(path.join(__dirname, 'proxies.txt'), 'utf-8').split('\n').filter(Boolean);
 	let browserLaunchCount = 0;
+
 	const botsCount = parseInt(process.env.MAX_BOTS, 10);
 	console.log(`Bots count: ${botsCount} (env MAX_BOTS)`);
 
@@ -52,7 +50,7 @@ const MESSAGES_ARRAY = [
 		const randomNick = getRandomNickname(USERNAMES_ARRAY);
 		console.log(`Starting (${randomNick}): ${profile.path}`);
 
-		const browser = await launchBrowser(proxy, profile.path, browserArgs, plugins);
+		const browser = await launchBrowser(proxy, profile.path, browserArgs, true);
 		browserLaunchCount++;
 
 		const pages = await browser.pages();
