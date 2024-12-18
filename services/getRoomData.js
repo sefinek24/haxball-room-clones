@@ -2,6 +2,12 @@ const axios = require('./axios.js');
 
 const name = process.env.ROOM_NAME_TO_CLONE;
 
+const defaultCords = {
+	country: 'PL',
+	lat: 52.2295875549016,
+	lon: 21.0067005157071,
+};
+
 module.exports = async () => {
 	if (!name) throw new Error('ROOM_NAME_TO_CLONE is null or undefined');
 
@@ -12,9 +18,9 @@ module.exports = async () => {
 			return [];
 		}
 
-		return res.data?.rooms.length > 0 ? res.data.rooms[0] : { country: 'ru', lat: 55.751244, lon: 37.618423 };
+		return res.data?.rooms.length > 0 ? res.data.rooms[0] : defaultCords;
 	} catch (err) {
-		console.error(err);
-		return [];
+		console.error(err.stack);
+		return defaultCords;
 	}
 };
