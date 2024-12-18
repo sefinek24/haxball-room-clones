@@ -10,7 +10,7 @@ const createRoom = async () => {
 	const room = HBInit({
 		roomName,
 		maxPlayers: 16,
-		public: env === 'production',
+		public: true,
 		password: null,
 		playerName: 'KPYRHAX.PRO',
 		token: '{TOKEN}',
