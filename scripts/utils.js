@@ -69,16 +69,16 @@ const openTargetRoom = async (page, targetRoom) => {
 
 		page.on('request', req => {
 			if (blockedResources.has(req.resourceType()) || blockedDomains.has(new URL(req.url()).hostname)) {
-				console.debug(`BL ${req.resourceType()}: ${req.url()}`);
+				if (process.env.DEBUG === 'true') console.debug(`BL ${req.resourceType()}: ${req.url()}`);
 				return req.abort();
 			}
 
-			console.debug(`DN ${req.resourceType()}: ${req.url()}`);
+			if (process.env.DEBUG === 'true') console.debug(`DN ${req.resourceType()}: ${req.url()}`);
 			req.continue();
 		});
 
 		await page.goto(targetRoom, { waitUntil: 'networkidle0' });
-		console.log(`Navigated to ${targetRoom}`);
+		if (process.env.DEBUG === 'true') console.debug(`Navigated to ${targetRoom}`);
 	} catch (err) {
 		console.error(`Error while loading the page: ${err.message}`);
 	}
