@@ -52,7 +52,7 @@ mcedit proxy.txt (wklej wszystkie swoje proxy)
 cp .env.default .env
 mcedit .env (ustaw NODE_ENV na production i dostosuj pozostałe zmienne)
 npm install
-npm run dchrome
+npm run download-chrome
 npm run prepare-anticaptcha
 Zainstaluj wymagane zależności dla Chrome: https://github.com/sefinek/sefinek/blob/main/chrome.md
 npm install pm2 -g
