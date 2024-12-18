@@ -78,7 +78,7 @@ const openTargetRoom = async (page, targetRoom) => {
 		});
 
 		await page.goto(targetRoom, { waitUntil: 'networkidle0' });
-		if (process.env.DEBUG === 'true') console.debug(`Navigated to ${targetRoom}`);
+		console.log(`Navigated to ${targetRoom}`);
 	} catch (err) {
 		console.error(`Error while loading the page: ${err.message}`);
 	}
