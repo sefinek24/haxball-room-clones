@@ -15,8 +15,8 @@
   "main": "index.js",
   "scripts": {
     "date": "node scripts/timestamp.js",
-    "download-chrome": "npx @puppeteer/browsers install chrome@126",
-    "kill-chrome": "taskkill /F /IM chrome.exe /T",
+    "dchrome": "npx @puppeteer/browsers install chrome@126",
+    "kchrome": "taskkill /F /IM chrome.exe /T",
     "test": "echo \"Error: no test specified\" && exit 1",
     "up": "ncu -u && npm install && npm update && npm audit fix"
   },
