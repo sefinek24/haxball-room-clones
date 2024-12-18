@@ -1,4 +1,4 @@
-# HaxBall Room Cloning ♿⚽
+# HaxBall Room Cloning i nie tylko ♿⚽
 Ten projekt umożliwia klonowanie dowolnego pokoju HaxBall itp. Upewnij się, że masz uzasadniony powód przed jego użyciem.
 
 <div align="center">

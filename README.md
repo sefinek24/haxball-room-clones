@@ -1,4 +1,4 @@
-# HaxBall Room Cloning ♿⚽
+# HaxBall Room Cloning and more ♿⚽
 This project lets you clone any HaxBall room and more. Please ensure you have a legitimate reason before using it.
 
 <div align="center">
